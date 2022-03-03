@@ -1,14 +1,52 @@
-
-{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontlogo';
+  src: url("../_fonts/bubblegum-sans-regular.otf");
 }
-
 body {
-  background-color: #acacff;
-
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 1);
 }
 
+div#interface {
+width: 900px;
+background-color: #ffffff;
+margin: -20px auto 00px auto ;
+box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+padding: 10px ;
+}
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+  position: absolute;
+  left: 780px;
+  top: 70px;
+}
+header#cabecalho {
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px ;
+  
+}
+header#cabecalho h1{
+  font-family: 'fontelogo', sans-serif;
+  font-size: 30px;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0,0,0,..6);
+  padding: 0px;
+  margin-bottom: 0px;
+}
+header#cabecalho h2{
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #88888;
+  text-shadow: 1px 1px 1px rgba(0,0,0,..6);
+  padding: 0px;
+  margin-top: 0px;
+}
 main {
   background-color: white;
   width: 560px;
@@ -42,22 +80,34 @@ a:hover {
   color: rgb(26, 26, 255);
 }
   nav#menu{
-    display: block;
+    display:block;
     text-transform: uppercase;
     position: absolute;
-    top: -15px;
+    top: -20px;
     left: 301px;
   }
-  nav#menu ol {
-    list-style: none;
+  nav#menu li {
+    list-style:none;
     text-transform: uppercase;
   }
-  nav#menu ol{
+  nav#menu li{
     display:inline-block;
-    background-color: #dddd;
+    background-color: rgba(236, 87, 87, 0.068);
     padding: 10px;
     margin: 2px;
+    transition: background-color 1s;
+  }
+  nav#menu li:hover {
+background-color: rgb(243, 7, 7);    
   }
   nav#menu h1 {
     display: none;
+  }
+nav#menu a {
+color: black;
+text-decoration: #0303ec;
+}
+  nav#menu a:hover {
+    color: #ffff;
+    text-decoration: underline;
   }
